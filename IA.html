@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Chat con Gemini API</title>
+
+  <link rel="stylesheet" href="css/style_IA.css" />
+</head>
+<body>
+
+  <main class="contenedor">
+    <h1>Consultor NBA 🏀 </h1>
+     <div id="imgContainer">
+       <img
+        src="img/nba.jpg"
+        alt="nba.com"
+        width="300"
+        height="260"
+        class="img"
+      />
+     </div> 
+    
+
+    <p class="descripcion">
+      Chat integrando la api key de gemini con el rol de especialista nba para responder preguntas de esta indole.
+    </p>
+
+    <textarea 
+      id="pregunta" 
+      placeholder="Escribe tu pregunta aquí..."
+    ></textarea>
+
+    <button id="btnEnviar">
+      Enviar pregunta
+    </button>
+
+    <section class="respuesta-contenedor">
+      <h2>Respuesta:</h2>
+      <p id="respuesta">Aquí aparecerá la respuesta de la IA.</p>
+    </section>
+  </main>
+
+  <script src="js/apiAI.js"></script>
+</body>
+</html>

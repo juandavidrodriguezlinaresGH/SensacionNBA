@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #021124a4;
+  color: #222;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  text-align: center;
+  color: #555;
+}
+
+textarea {
+  width: 100%;
+  min-height: 130px;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 16px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background:aqua;
+}
+
+button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.respuesta-contenedor {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+#respuesta {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+#imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 350px;
+  margin: 0 auto;
+}

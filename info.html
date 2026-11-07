@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Contacto</title>
+
+    <link rel="stylesheet" href="css/style_info.css" />
+  </head>
+
+  <body>
+    <div class="datosContainer">
+      <h1>Ingresa tus datos de contacto</h1>
+      <form class="ContactForm" id="form">
+        <label for="nombre"> Nombre Completo </label><br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre_usuario"
+          placeholder="Escribe tu nombre "
+          required
+        />
+
+        <label for="email"> Correo Electronico </label><br />
+        <input
+          type="email"
+          id="email"
+          name="email_usuario"
+          value="emailuser@gmail.com "
+          required
+        />
+
+        <label for="edad"> Edad </label><br />
+        <input
+          type="number"
+          id="edad"
+          name="edad_usuario"
+          min="8"
+          max="120"
+          required
+        />
+
+        <label for="Telefono"> Telefono </label><br />
+        <input type="tel" id="Telefono" name="Telefono_Usuario" required />
+
+        <p>
+          <span>Genero</span> <br />
+
+          <input type="radio" id="masc" name="Genero" value="H" />
+          <label for="masc"> Hombre </label>
+
+          <input type="radio" id="fem" name="Genero" value="M" />
+          <label for="fem"> Mujer </label>
+
+          <input type="radio" id="No binario" name="Genero" value="N" />
+          <label for="nobin"> No binario </label>
+
+          <input type="radio" id="otro" name="Genero" value="O" />
+          <label for="fem"> Otro </label>
+          <br />
+        </p>
+
+        <p>
+          <label for="conocido"> Como nos Conociste </label>
+
+          <select id="conocido" name="usuario_conocido">
+            <br />
+            <option value="yt">Youtube</option>
+            <option value="ig">Instagram</option>
+            <option value="tl">Telegram</option>
+            <option value="fc">Facebook</option>
+            <option value="otr">Otro</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Nivel de experiencia con de la pagina(1-10):</label><br />
+          <input type="range" id="nivel" name="nivel" min="1" max="10" />
+        </p>
+
+        <p>
+          <label for="fecha">Día de Que se lleno el Formulario</label><br />
+          <input type="date" id="fecha" name="fecha_asistencia" />
+        </p>
+        <button type="submit" id="envioDatos">Enviar Datos</button>
+        <br />
+        <p>
+          <label for="terminos">Acepto los términos y condiciones</label>
+          <input type="checkbox" id="terminos" name="terminos" required />
+        </p>
+      </form>
+    </div>
+
+    <div id="modalDatos" class="modal">
+      <div class="modalContenido">
+        <span id="cerrarModal" class="cerrar">❌</span>
+
+        <h2>Datos del Baller </h2>
+        <img
+          id="imagenPreview"
+          class="imagenPreview"
+          src="img/Steve Nash rostro.jpg"
+          alt="Foto de perfil"
+        />
+        <p><strong> Fecha de Solicitud  :</strong> <span id="modalFecha"> </span></p>
+        <p><strong> 🏀 Nombre:</strong> <span id="modalNombre"></span></p>
+        <p><strong> Correo Electronico :</strong> <span id="modalEmail"> </span></p>
+        <p><strong> Edad  :</strong> <span id="modalEdad"> </span></p>
+        <p><strong> Telefono :</strong> <span id="modalTelefono"> </span></p>
+        <p><strong> Genero :</strong> <span id="modalGenero"> </span></p>
+        <p><strong> Nos Conocio Mediante  :</strong> <span id="modalConocido"> </span></p>
+        <p><strong> Nivle de Experiencia  :</strong> <span id="modalExperiencia"> </span></p>
+      </div>
+    </div>
+
+    <script src="js/info.js"></script>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la pagina al ancho del dispositivo. -->
+    <title>Estadisticas NBA</title> 
+    <link rel="stylesheet" href="css/style_estads.css"> 
+</head> 
+<body> 
+    <header id="inicio" class="encabezado"> 
+        <div class="contenedor encabezado__contenido"> <!-- Agrupa el contenido de cabecera con ancho controlado. -->
+            <p class="marca">Sensacion NBA</p> 
+            <nav class="navegacion" aria-label="Navegacion de estadisticas"> <!-- Define la navegacion interna de la pagina. -->
+                <ul class="navegacion__lista"> <!-- Agrupa los enlaces principales del menu. -->
+                    <li class="navegacion__item"><a href="index.html">Inicio</a></li>
+                    <li class="navegacion__item"><a href="#puntos">Puntos</a></li> 
+                    <li class="navegacion__item"><a href="#asistencias">Asistencias</a></li>  
+                    <li class="navegacion__item"><a href="#bloqueos">Bloqueos</a></li> 
+                    <li class="navegacion__item"><a href="#rebotes">Rebotes</a></li> 
+                    <li class="navegacion__item"><a href="#triples">Triples</a></li> 
+                    <li class="navegacion__item"><a href="#robos">Robos</a></li> 
+                </ul>
+            </nav> 
+            <nav class="enlaces" aria-label="Enlaces complementarios"> 
+                <a href="https://www.nba.com/">NBA</a> 
+                <a href="https://www.instagram.com/nba/">Instagram NBA</a> 
+                <a href="https://www.disneyplus.com/">Ver la NBA</a> 
+                <a href="info.html">Queremos conocerte</a> 
+                <a href="estadisticas.html">Estadisticas</a> 
+                <a href="partidos.html">Top 5 partidos</a> 
+                <a href="colaboradores.html">Colaboradores</a> 
+            </nav> 
+        </div> 
+    </header> 
+
+    <main> <!-- Define el contenido principal del documento. -->
+        <section class="hero" aria-labelledby="titulo-principal"> 
+            <div class="contenedor"> 
+                <h1 id="titulo-principal">Estadisticas NBA</h1> 
+                <p class="hero__texto">Consulta lideres historicos por puntos, asistencias, bloqueos, rebotes, triples y robos.</p> <!-- Explica el objetivo de la pagina. -->
+            </div> 
+        </section> 
+
+        <section id="puntos" class="seccion" aria-labelledby="titulo-puntos"> <!-- Agrupa jugadores lideres en puntos. -->
+            <div class="contenedor"> <!-- Centra el contenido de la seccion. -->
+                <h2 id="titulo-puntos">Jugadores con mas puntos</h2> <!-- Titulo de la categoria de puntos. -->
+                <article class="jugador-card"> <!-- Tarjeta de LeBron James en puntos. -->
+                    <img src="img/lebronrostro.jpg" alt="Rostro de LeBron James" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>LeBron James</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Puntos:</strong> 43.127</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 21</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de LeBron James. -->
+                <article class="jugador-card"> <!-- Tarjeta de Kareem Abdul-Jabbar en puntos. -->
+                    <img src="img/karemrostro.jpg" alt="Rostro de Kareem Abdul-Jabbar" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Kareem Abdul-Jabbar</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Puntos:</strong> 38.387</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 20</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Kareem Abdul-Jabbar. -->
+                <article class="jugador-card"> <!-- Tarjeta de Karl Malone en puntos. -->
+                    <img src="img/karlrostro.jpg" alt="Rostro de Karl Malone" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Karl Malone</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Puntos:</strong> 36.928</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 19</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Karl Malone. -->
+                <article class="jugador-card"> <!-- Tarjeta de Kobe Bryant en puntos. -->
+                    <img src="img/koberostro.jpg" alt="Rostro de Kobe Bryant" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Kobe Bryant</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Puntos:</strong> 33.643</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 20</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Kobe Bryant. -->
+                <article class="jugador-card"> <!-- Tarjeta de Michael Jordan en puntos. -->
+                    <img src="img/jordanrostro.png" alt="Rostro de Michael Jordan" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Michael Jordan</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Puntos:</strong> 32.292</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Washington Wizards</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 15</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Michael Jordan. -->
+            </div> <!-- Cierra el contenedor de puntos. -->
+        </section> <!-- Cierra la seccion de puntos. -->
+
+        <section id="asistencias" class="seccion seccion--clara" aria-labelledby="titulo-asistencias"> <!-- Agrupa jugadores lideres en asistencias. -->
+            <div class="contenedor"> <!-- Centra el contenido de la seccion. -->
+                <h2 id="titulo-asistencias">Jugadores con mas asistencias</h2> <!-- Titulo de la categoria de asistencias. -->
+                <article class="jugador-card"> <!-- Tarjeta de John Stockton en asistencias. -->
+                    <img src="img/John Stockton.jpg" alt="Rostro de John Stockton" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>John Stockton</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Asistencias:</strong> 15.806</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Utah Jazz</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 19</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de John Stockton. -->
+                <article class="jugador-card"> <!-- Tarjeta de Chris Paul en asistencias. -->
+                    <img src="img/Chris Paul rostro.jpg" alt="Rostro de Chris Paul" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Chris Paul</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Asistencias:</strong> 12.552</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Clippers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 21</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Chris Paul. -->
+                <article class="jugador-card"> <!-- Tarjeta de Jason Kidd en asistencias. -->
+                    <img src="img/Jason Kidd rostro.jpg" alt="Rostro de Jason Kidd" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Jason Kidd</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Asistencias:</strong> 12.091</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> New York Knicks</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 19</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Jason Kidd. -->
+                <article class="jugador-card"> <!-- Tarjeta de LeBron James en asistencias. -->
+                    <img src="img/lebronrostro.jpg" alt="Rostro de LeBron James" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>LeBron James</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Asistencias:</strong> 11.892</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 21</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de LeBron James. -->
+                <article class="jugador-card"> <!-- Tarjeta de Steve Nash en asistencias. -->
+                    <img src="img/Steve Nash rostro.jpg" alt="Rostro de Steve Nash" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Steve Nash</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Asistencias:</strong> 10.335</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 18</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Steve Nash. -->
+            </div> <!-- Cierra el contenedor de asistencias. -->
+        </section> <!-- Cierra la seccion de asistencias. -->
+
+        <section id="bloqueos" class="seccion" aria-labelledby="titulo-bloqueos"> <!-- Agrupa jugadores lideres en bloqueos. -->
+            <div class="contenedor"> <!-- Centra el contenido de la seccion. -->
+                <h2 id="titulo-bloqueos">Jugadores con mas bloqueos</h2> <!-- Titulo de la categoria de bloqueos. -->
+                <article class="jugador-card"> <!-- Tarjeta de Hakeem Olajuwon en bloqueos. -->
+                    <img src="img/Hakeem Olajuwon rostro.jpg" alt="Rostro de Hakeem Olajuwon" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Hakeem Olajuwon</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Bloqueos:</strong> 3.830</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Toronto Raptors</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 18</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Hakeem Olajuwon. -->
+                <article class="jugador-card"> <!-- Tarjeta de Dikembe Mutombo en bloqueos. -->
+                    <img src="img/Dikembe Mutombo rostro.jpg" alt="Rostro de Dikembe Mutombo" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Dikembe Mutombo</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Bloqueos:</strong> 3.289</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Houston Rockets</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 18</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Dikembe Mutombo. -->
+                <article class="jugador-card"> <!-- Tarjeta de Kareem Abdul-Jabbar en bloqueos. -->
+                    <img src="img/karemrostro.jpg" alt="Rostro de Kareem Abdul-Jabbar" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Kareem Abdul-Jabbar</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Bloqueos:</strong> 3.189</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 20</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Kareem Abdul-Jabbar. -->
+                <article class="jugador-card"> <!-- Tarjeta de Mark Eaton en bloqueos. -->
+                    <img src="img/Mark Eatonrostro.jpg" alt="Rostro de Mark Eaton" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Mark Eaton</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Bloqueos:</strong> 3.064</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Utah Jazz</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 11</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Mark Eaton. -->
+                <article class="jugador-card"> <!-- Tarjeta de Tim Duncan en bloqueos. -->
+                    <img src="img/Tim Duncan r.jpg" alt="Rostro de Tim Duncan" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Tim Duncan</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Bloqueos:</strong> 3.020</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> San Antonio Spurs</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 19</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Tim Duncan. -->
+            </div> <!-- Cierra el contenedor de bloqueos. -->
+        </section> <!-- Cierra la seccion de bloqueos. -->
+
+        <section id="rebotes" class="seccion seccion--clara" aria-labelledby="titulo-rebotes"> <!-- Agrupa jugadores lideres en rebotes. -->
+            <div class="contenedor"> <!-- Centra el contenido de la seccion. -->
+                <h2 id="titulo-rebotes">Jugadores con mas rebotes</h2> <!-- Titulo de la categoria de rebotes. -->
+                <article class="jugador-card"> <!-- Tarjeta de Wilt Chamberlain en rebotes. -->
+                    <img src="img/Wilt Chamberlain r.jpg" alt="Rostro de Wilt Chamberlain" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Wilt Chamberlain</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Rebotes:</strong> 23.924</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 14</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Wilt Chamberlain. -->
+                <article class="jugador-card"> <!-- Tarjeta de Bill Russell en rebotes. -->
+                    <img src="img/Bill Russell r.jpg" alt="Rostro de Bill Russell" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Bill Russell</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Rebotes:</strong> 21.620</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Boston Celtics</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 13</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Bill Russell. -->
+                <article class="jugador-card"> <!-- Tarjeta de Kareem Abdul-Jabbar en rebotes. -->
+                    <img src="img/karemrostro.jpg" alt="Rostro de Kareem Abdul-Jabbar" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Kareem Abdul-Jabbar</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Rebotes:</strong> 17.440</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Lakers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 20</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Kareem Abdul-Jabbar. -->
+                <article class="jugador-card"> <!-- Tarjeta de Elvin Hayes en rebotes. -->
+                    <img src="img/Elvin Hayes r.jpg" alt="Rostro de Elvin Hayes" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Elvin Hayes</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Rebotes:</strong> 16.279</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Houston Rockets</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 16</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Elvin Hayes. -->
+                <article class="jugador-card"> <!-- Tarjeta de Moses Malone en rebotes. -->
+                    <img src="img/Moses Malone r.jpg" alt="Rostro de Moses Malone" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Moses Malone</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Rebotes:</strong> 16.212</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> San Antonio Spurs</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 21</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Moses Malone. -->
+            </div> <!-- Cierra el contenedor de rebotes. -->
+        </section> <!-- Cierra la seccion de rebotes. -->
+
+        <section id="triples" class="seccion" aria-labelledby="titulo-triples"> <!-- Agrupa jugadores lideres en triples. -->
+            <div class="contenedor"> <!-- Centra el contenido de la seccion. -->
+                <h2 id="titulo-triples">Jugadores con mas triples</h2> <!-- Titulo de la categoria de triples. -->
+                <article class="jugador-card"> <!-- Tarjeta de Stephen Curry en triples. -->
+                    <img src="img/curry r.jpg" alt="Rostro de Stephen Curry" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Stephen Curry</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Triples:</strong> 4.233</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Golden State Warriors</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 15</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Stephen Curry. -->
+                <article class="jugador-card"> <!-- Tarjeta de James Harden en triples. -->
+                    <img src="img/harden r.jpg" alt="Rostro de James Harden" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>James Harden</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Triples:</strong> 3.339</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Cleveland Cavaliers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 15</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de James Harden. -->
+                <article class="jugador-card"> <!-- Tarjeta de Ray Allen en triples. -->
+                    <img src="img/Ray Allen r.jpg" alt="Rostro de Ray Allen" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Ray Allen</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Triples:</strong> 2.973</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Miami Heat</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 18</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Ray Allen. -->
+                <article class="jugador-card"> <!-- Tarjeta de Klay Thompson en triples. -->
+                    <img src="img/Klay Thompson r.jpg" alt="Rostro de Klay Thompson" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Klay Thompson</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Triples:</strong> 2.863</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Dallas Mavericks</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 13</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Klay Thompson. -->
+                <article class="jugador-card"> <!-- Tarjeta de Damian Lillard en triples. -->
+                    <img src="img/Damian Lillard r.jpg" alt="Rostro de Damian Lillard" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Damian Lillard</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Triples:</strong> 2.804</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Portland Trail Blazers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 12</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Damian Lillard. -->
+            </div> <!-- Cierra el contenedor de triples. -->
+        </section> <!-- Cierra la seccion de triples. -->
+
+        <section id="robos" class="seccion seccion--clara" aria-labelledby="titulo-robos"> <!-- Agrupa jugadores lideres en robos. -->
+            <div class="contenedor"> <!-- Centra el contenido de la seccion. -->
+                <h2 id="titulo-robos">Jugadores con mas robos</h2> <!-- Titulo de la categoria de robos. -->
+                <article class="jugador-card"> <!-- Tarjeta de John Stockton en robos. -->
+                    <img src="img/John Stockton.jpg" alt="Rostro de John Stockton" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>John Stockton</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Robos:</strong> 3.265</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Utah Jazz</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 19</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de John Stockton. -->
+                <article class="jugador-card"> <!-- Tarjeta de Chris Paul en robos. -->
+                    <img src="img/Chris Paul rostro.jpg" alt="Rostro de Chris Paul" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Chris Paul</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Robos:</strong> 2.728</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Los Angeles Clippers</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 21</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Chris Paul. -->
+                <article class="jugador-card"> <!-- Tarjeta de Jason Kidd en robos. -->
+                    <img src="img/Jason Kidd rostro.jpg" alt="Rostro de Jason Kidd" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Jason Kidd</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Robos:</strong> 2.684</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> New York Knicks</p> <!-- Muestra el ultimo equipo registrado. -->
+                        <p><strong>Temporadas:</strong> 19</p> <!-- Muestra las temporadas jugadas. -->
+                    </div> <!-- Cierra los datos del jugador. -->
+                </article> <!-- Cierra la tarjeta de Jason Kidd. -->
+                <article class="jugador-card"> <!-- Tarjeta de Michael Jordan en robos. -->
+                    <img src="img/jordanrostro.png" alt="Rostro de Michael Jordan" class="jugador-card__imagen"> <!-- Imagen del jugador. -->
+                    <div class="jugador-card__info"> <!-- Agrupa los datos estadisticos del jugador. -->
+                        <h3>Michael Jordan</h3> <!-- Nombre del jugador. -->
+                        <p><strong>Robos:</strong> 2.514</p> <!-- Muestra la estadistica principal. -->
+                        <p><strong>Ultimo equipo:</strong> Washington Wizards</p> 
+                    </div> 
+                </article> 
+                <article class="jugador-card"> 
+                    <img src="img/gary r.jpg" alt="Rostro de Gary Payton" class="jugador-card__imagen"> 
+                    <div class="jugador-card__info"> 
+                        <h3>Gary Payton</h3> 
+                        <p><strong>Robos:</strong> 2.445</p> 
+                        <p><strong>Ultimo equipo:</strong> Miami Heat</p> 
+                        <p><strong>Temporadas:</strong> 17</p> 
+                    </div> 
+                </article> 
+            </div> 
+        </section> 
+    </main> 
+
+    <footer class="pie"> <!-- Presenta el cierre de la pagina. -->
+        <div class="contenedor"> 
+            <p>Sensacion NBA - Estadisticas creadas solo con HTML y CSS.</p> 
+        </div>
+    </footer> 
+</body> 
+</html> 

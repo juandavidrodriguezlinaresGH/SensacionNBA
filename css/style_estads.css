@@ -1,0 +1,189 @@
+/* Hoja de estilos externa para estadisticas.html. */
+
+* { /* Selector universal: aplica una base comun a toda la pagina. */
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho total. */
+    margin: 0; /* Elimina margenes predeterminados del navegador. */
+    padding: 0; /* Elimina rellenos predeterminados del navegador. */
+}
+
+html { /* Selector de tipo: apunta al elemento raiz del documento. */
+    font-size: 16px; /* Define la base para las unidades rem. */
+}
+
+body { /* Selector de tipo: aplica estilos generales al cuerpo visible. */
+    font-family: Arial, Helvetica, sans-serif; /* Define una pila de fuentes sans-serif. */
+    font-size: 1rem; /* Mantiene el tamano base del texto. */
+    line-height: 1.6; /* Mejora la separacion entre lineas. */
+    color: #182033; /* Define el color principal del texto. */
+    background-color: #f4f7fb; /* Aplica un fondo claro a la pagina. */
+}
+
+a[href] { /* Selector de atributo: apunta a enlaces con atributo href. */
+    color: #0b4fba; /* Define el color base de los enlaces. */
+    text-decoration: none; /* Elimina el subrayado predeterminado. */
+}
+
+img { /* Selector de tipo: aplica reglas generales a imagenes. */
+    display: block; /* Convierte las imagenes en elementos de bloque. */
+    max-width: 100%; /* Evita que las imagenes superen su contenedor. */
+    height: auto; /* Mantiene la proporcion original de la imagen. */
+}
+
+h1, h2, h3 { /* Agrupacion de selectores: comparte estilo entre titulos. */
+    font-family: Georgia, "Times New Roman", serif; /* Usa fuente serif para jerarquia visual. */
+    font-weight: 700; /* Aplica grosor fuerte a los titulos. */
+    line-height: 1.2; /* Reduce el interlineado en encabezados. */
+}
+
+h1 { /* Selector de tipo: aplica estilos al titulo principal. */
+    font-size: 2.4rem; /* Define un tamano grande para el titulo principal. */
+    text-align: center; /* Centra el titulo principal. */
+    text-transform: uppercase; /* Muestra el titulo en mayusculas. */
+    letter-spacing: 0; /* Mantiene espaciado normal entre letras. */
+    margin-bottom: 1rem; /* Separa el titulo del texto introductorio. */
+}
+
+h2 { /* Selector de tipo: aplica estilos a titulos de seccion. */
+    font-size: 2rem; /* Define tamano destacado para cada categoria. */
+    text-align: center; /* Centra los titulos de categoria. */
+    margin-bottom: 1.5rem; /* Separa el titulo de las tarjetas. */
+}
+
+h3 { /* Selector de tipo: aplica estilos a nombres de jugadores. */
+    font-size: 1.25rem; /* Define un tamano intermedio para nombres. */
+    margin-bottom: 0.75rem; /* Separa el nombre de los datos. */
+}
+
+p { /* Selector de tipo: aplica reglas base a parrafos. */
+    margin-bottom: 0.5rem; /* Agrega separacion inferior entre lineas de datos. */
+}
+
+strong { /* Selector de tipo: apunta al texto resaltado de cada dato. */
+    font-weight: 700; /* Mantiene los nombres de datos en negrita. */
+}
+
+#inicio { /* Selector de ID: aplica estilos especificos a la cabecera. */
+    color: white; /* Define texto blanco dentro del encabezado. */
+    background-color: #0b2f6f; /* Define un fondo azul intenso. */
+}
+
+.contenedor { /* Selector de clase: controla ancho reutilizable. */
+    width: 92%; /* Usa ancho relativo para adaptarse al dispositivo. */
+    max-width: 1100px; /* Limita el ancho en pantallas grandes. */
+    margin: 0 auto; /* Centra el bloque horizontalmente. */
+}
+
+.encabezado { /* Selector de clase: define el area superior. */
+    padding: 1rem 0; /* Agrega espacio vertical interno. */
+    border-bottom: 0.25rem solid #d71920; /* Crea una linea roja inferior. */
+}
+
+.encabezado__contenido { /* Selector de clase: organiza el contenido de cabecera. */
+    text-align: center; /* Centra marca y navegaciones. */
+}
+
+.marca { /* Selector de clase: estiliza el nombre del sitio. */
+    display: block; /* Hace que la marca ocupe una linea completa. */
+    font-size: 1.6rem; /* Aumenta el tamano de la marca. */
+    font-weight: 700; /* Resalta la marca con negrita. */
+    text-transform: uppercase; /* Convierte la marca a mayusculas visuales. */
+    margin-bottom: 0.75rem; /* Separa la marca del menu. */
+}
+
+.navegacion { /* Selector de clase: define el bloque de navegacion principal. */
+    margin-bottom: 0.75rem; /* Separa la navegacion de los enlaces secundarios. */
+}
+
+.navegacion__lista { /* Selector de clase: limpia la lista del menu. */
+    list-style: none; /* Quita las vinetas predeterminadas. */
+}
+
+.navegacion__item { /* Selector de clase: define cada item de la navegacion. */
+    display: inline-block; /* Ubica los items en linea con caja propia. */
+    margin: 0.25rem; /* Agrega separacion entre items. */
+}
+
+.encabezado a { /* Selector descendiente: apunta a enlaces dentro del encabezado. */
+    display: inline-block; /* Permite aplicar padding a cada enlace. */
+    color: white; /* Mantiene los enlaces blancos. */
+    background-color: #154a9c; /* Agrega fondo azul secundario a enlaces. */
+    padding: 0.5rem 0.75rem; /* Aumenta el area clicable del enlace. */
+    border: 0.0625rem solid white; /* Dibuja un borde blanco fino. */
+    border-radius: 0.5rem; /* Redondea ligeramente las esquinas. */
+    margin: 0.25rem; /* Separa cada enlace visualmente. */
+}
+
+.enlaces { /* Selector de clase: define enlaces complementarios. */
+    font-size: 0.95rem; /* Reduce un poco el tamano frente al menu principal. */
+}
+
+.hero { /* Selector de clase: define la introduccion de la pagina. */
+    padding: 2.5rem 0; /* Agrega espacio vertical interno. */
+    color: #182033; /* Usa texto oscuro sobre fondo claro. */
+    background-color: #ffffff; /* Define fondo blanco para la introduccion. */
+    border-bottom: 0.0625rem solid #d8e0ee; /* Separa la introduccion del contenido. */
+}
+
+.hero__texto { /* Selector de clase: controla el texto introductorio. */
+    width: 90%; /* Reduce el ancho para mejorar lectura. */
+    max-width: 760px; /* Evita lineas demasiado largas. */
+    margin: 0 auto; /* Centra el parrafo horizontalmente. */
+    text-align: center; /* Centra el texto introductorio. */
+    background-color: #e9eef7; /* Aplica un fondo azul muy claro. */
+    padding: 1rem; /* Agrega espacio interno al parrafo. */
+    border: 0.0625rem solid #d8e0ee; /* Dibuja un borde sutil. */
+}
+
+.seccion { /* Selector de clase: define cada bloque de estadistica. */
+    padding: 2rem 0; /* Agrega espacio vertical a cada categoria. */
+    color: #182033; /* Mantiene texto oscuro en la seccion. */
+    background-color: #ffffff; /* Usa fondo blanco para categorias alternas. */
+}
+
+.seccion--clara { /* Selector de clase: variante visual para alternar secciones. */
+    background-color: #e9eef7; /* Aplica fondo claro azulado. */
+}
+
+.jugador-card { /* Selector de clase: define cada tarjeta de jugador. */
+    display: inline-block; /* Permite tarjetas en linea sin usar flexbox. */
+    width: 100%; /* Ocupa el ancho disponible en pantallas pequenas. */
+    max-width: 320px; /* Limita el ancho maximo de cada tarjeta. */
+    min-height: 430px; /* Mantiene altura minima uniforme. */
+    margin: 0.75rem; /* Separa las tarjetas entre si. */
+    padding: 1rem; /* Agrega espacio interno a la tarjeta. */
+    color: #182033; /* Define color de texto dentro de la tarjeta. */
+    background-color: white; /* Aplica fondo blanco a la tarjeta. */
+    border: 0.0625rem solid #d8e0ee; /* Dibuja un borde suave. */
+    border-radius: 0.5rem; /* Redondea las esquinas de la tarjeta. */
+    outline: 0.0625rem solid #edf1f7; /* Agrega contorno externo sin modificar el tamano. */
+    text-align: center; /* Centra imagen y contenido textual. */
+}
+
+.jugador-card__imagen { /* Selector de clase: controla la imagen de cada jugador. */
+    width: 12.5rem; /* Define un ancho fijo para que la imagen tenga base cuadrada. */
+    height: 12.5rem; /* Define la misma altura que el ancho para formar un circulo perfecto. */
+    max-width: 100%; /* Evita que la imagen se salga de la tarjeta en pantallas pequenas. */
+    margin: 0 auto 1rem auto; /* Centra la imagen y la separa del texto. */
+    border: 0.125rem solid #0b2f6f; /* Agrega borde azul a la imagen. */
+    border-radius: 50%; /* Convierte imagenes cuadradas en formato circular. */
+}
+
+.jugador-card__info { /* Selector de clase: agrupa los datos del jugador. */
+    text-align: center; /* Mantiene los datos centrados dentro de la tarjeta. */
+}
+
+.jugador-card__info p { /* Selector descendiente: apunta a parrafos dentro de la informacion. */
+    font-size: 1rem; /* Mantiene tamano legible para los datos. */
+    margin-bottom: 0.45rem; /* Separa cada dato del siguiente. */
+}
+
+.pie { /* Selector de clase: define el pie de pagina. */
+    color: white; /* Usa texto blanco en el cierre. */
+    background: #111827; /* Usa la propiedad abreviada background con color solido. */
+    padding: 1rem 0; /* Agrega espacio vertical interno. */
+    text-align: center; /* Centra el texto del pie. */
+}
+
+.pie p { /* Selector descendiente: apunta al parrafo del pie. */
+    margin-bottom: 0; /* Elimina margen inferior para cierre compacto. */
+}

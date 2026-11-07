@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colaboradores</title>
+    <link rel="stylesheet" href="css/style_colab.css" />
+  </head>
+  <body>
+    <div class="datosContainer">
+      <h2>Unete a nuestro Grupo de Colaboradores</h2>
+      <img
+        src="img/nba.jpg "
+        alt="nba.com"
+        width="300"
+        height="260"
+        class="img"
+      />
+
+      <form class="ContactForm" id="form">
+        <p>
+          <label for="foto">Sube tu foto de perfil:</label><br />
+          <input type="file" id="foto" name="foto_perfil" accept="image/*" />
+        </p>
+
+        <p>
+          <label for="color">Color de tu gafete:</label><br />
+          <input type="color" id="color" name="color_gafete" value="#ff0000" />
+        </p>
+        <p>
+          <label for="nombre"> Nombre de Usuario </label><br />
+          <input
+            type="text"
+            id="nombre"
+            name="nombre_usuario"
+            placeholder="Nombre de Usuario "
+            required
+          />
+        </p>
+
+        <p>
+          <label for="clave">Crea una Contraseña:</label><br />
+          <input type="password" id="clave" name="password" required />
+        </p>
+        <button type="submit" id="envioDatos">Enviar Datos</button>
+        <p>
+          <label for="terminos">Acepto los términos y condiciones</label>
+          <input type="checkbox" id="terminos" name="terminos" required />
+        </p>
+      </form>
+    </div>
+
+    <div id="modalDatos" class="modal">
+      <div class="modalContenido">
+        <span id="cerrarModal" class="cerrar">❌</span>
+
+        <h2>Datos del Colaborador</h2>
+
+        <img
+          id="imagenPreview"
+          class="imagenPreview"
+          src=""
+          alt="Foto de perfil"
+        />
+
+        <p><strong> 🏀Nombre:</strong> <span id="modalNombre"></span></p>
+        <p> <strong> Contraseña :</strong> <span id="modalClave"> </span></p>
+        <p>
+          <strong>Color del gafete:</strong> <span id="modalColorTexto"></span>
+        </p>
+
+        <div id="modalColorCaja" class="colorCaja"></div>
+      </div>
+    </div>
+
+    <script src="js/colaboradores.js"></script>
+  </body>
+</html>

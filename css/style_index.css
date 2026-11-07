@@ -1,0 +1,253 @@
+
+
+* { 
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho y alto total. */
+    margin: 0; /* Elimina margenes predeterminados del navegador. */
+    padding: 0; /* Elimina rellenos predeterminados del navegador. */
+}
+
+html { 
+    font-size: 16px; /* Define una base para calcular unidades rem. */
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif; /* Usa una familia sans-serif con fuentes de respaldo. */
+    font-size: 1rem;
+    line-height: 1.6; /* Mejora la lectura aumentando el espacio entre lineas. */
+    color: #182033; /* Define el color principal del texto. */
+    background-color: #f4f7fb; /* Aplica un fondo solido claro a toda la pagina. */
+}
+
+a[href] { 
+    color: #0b4fba;
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces. */
+}
+
+img { 
+    display: block; /* Hace que los recursos visuales se comporten como bloques. */
+    max-width: 100%; /* Impide que se salgan del ancho disponible. */
+    height: auto; /* Mantiene la proporcion original de cada imagen. */
+}
+
+h1, h2, h3 { 
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700; /* Aplica grosor fuerte a los titulos. */
+    line-height: 1.2;
+}
+
+h1 { 
+    font-size: 2.5rem;
+    text-align: center; /* Centra el texto principal. */
+    text-transform: uppercase; /* Convierte el titulo a mayusculas. */
+    letter-spacing: 0; /* Mantiene el espaciado normal entre letras. */
+    margin-bottom: 1rem; /* Separa el titulo del parrafo siguiente. */
+}
+
+h2 { 
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h3 { 
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+p { 
+    margin-bottom: 1rem;
+}
+
+#inicio { 
+    background-color: #0b2f6f;
+    color: white;
+}
+
+.contenedor { 
+    width: 92%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.encabezado { 
+    padding: 1rem 0;
+    border-bottom: 0.25rem solid #d71920; /* Coloca una linea inferior roja como acento NBA. */
+}
+
+.encabezado__contenido { 
+    text-align: center;
+}
+
+.marca { 
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.navegacion { 
+    margin-bottom: 0.75rem;
+}
+
+.navegacion__lista { 
+    list-style: none; /* Quita las vinetas predeterminadas de la lista. */
+}
+
+.navegacion__item { 
+    display: inline-block;
+    margin: 0.25rem;
+}
+
+.encabezado a { 
+    display: inline-block;
+    color: white;
+    background-color: #154a9c;
+    padding: 0.5rem 0.75rem;
+    border: 0.0625rem solid white; /* Dibuja un borde blanco fino. */
+    border-radius: 0.5rem; /* Redondea ligeramente las esquinas. */
+    margin: 0.25rem;
+}
+
+.enlaces { 
+    font-size: 0.95rem;
+}
+
+.hero { 
+    min-height: 0; /* Evita que la portada tenga una altura exagerada. */
+    padding: 2rem 0;
+    background-color: #ffffff;
+}
+
+.hero__texto { 
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 1rem;
+    border: 0.0625rem solid #d8e0ee;
+}
+
+.figura-principal { 
+    width: 90%;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 0.0625rem solid #d8e0ee;
+    border-radius: 0.5rem;
+}
+
+.imagen-principal { 
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 0.75rem auto;
+    border-radius: 0.4rem;
+}
+
+figcaption { 
+    font-size: 0.9rem;
+    font-style: italic; /* Da un estilo inclinado a la descripcion. */
+    color: #3d4b63;
+}
+
+.seccion { 
+    padding: 2rem 0;
+}
+
+.seccion--azul { 
+    color: white;
+    background-color: #0b2f6f;
+}
+
+.seccion--clara { 
+    color: #182033;
+    background-color: #e9eef7;
+}
+
+.listado { 
+    padding: 2rem 0;
+}
+
+.tarjeta { 
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    min-height: 520px;
+    margin: 0.75rem;
+    padding: 1rem;
+    color: #182033;
+    background-color: white;
+    border: 0.0625rem solid #d8e0ee;
+    border-radius: 0.5rem;
+    outline: 0.0625rem solid #edf1f7; /* Agrega un contorno externo suave sin ocupar espacio. */
+    text-align: center;
+}
+
+.tarjeta__imagen { 
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 1rem auto;
+}
+
+details { 
+    text-align: left;
+}
+
+summary { /* Selector de tipo: estiliza el encabezado del desplegable. */
+    display: inline-block;
+    color: white;
+    background-color: #d71920;
+    padding: 0.45rem 0.7rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.75rem;
+}
+
+details p { /* Selector descendiente: apunta a parrafos dentro de details. */
+    margin-top: 0.75rem; /* Separa el texto del encabezado desplegable. */
+    margin-bottom: 0;
+}
+
+.noticias { 
+    text-align: center;
+}
+
+.noticia { 
+    display: inline-block;
+    width: 100%;
+    max-width: 280px;
+    min-height: 360px;
+    margin: 0.75rem;
+    padding: 1rem;
+    color: #182033;
+    background-color: white;
+    border: 0.0625rem solid #d8e0ee;
+    border-radius: 0.5rem;
+}
+
+.noticia__imagen { 
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto 1rem auto;
+}
+
+.noticia a { /* Selector descendiente: apunta a enlaces dentro de noticias. */
+    display: inline-block;
+    color: white;
+    background-color: #0b4fba;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.4rem;
+}
+
+.pie { 
+    color: white;
+    background: #111827; /* Aplica la propiedad abreviada background con un color solido. */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.pie p { /* Selector descendiente: apunta al parrafo dentro del pie. */
+    margin-bottom: 0;
+}
